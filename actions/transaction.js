@@ -102,7 +102,7 @@ function calculateNextDate(startDate, interval) {
 }
 export async function scanReceipt(file) {
   try {
-    const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = ai.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     // Convert File to ArrayBuffer
     const arrayBuffer = await file.arrayBuffer();
